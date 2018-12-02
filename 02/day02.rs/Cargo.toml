@@ -1,0 +1,7 @@
+[package]
+name = "day02"
+version = "0.1.0"
+authors = ["Gerry Agbobada <gagbobada+git@gmail.com>"]
+edition = "2018"
+
+[dependencies]
