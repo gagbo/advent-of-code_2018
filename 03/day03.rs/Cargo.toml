@@ -1,0 +1,8 @@
+[package]
+name = "day03"
+version = "0.1.0"
+authors = ["Gerry Agbobada <gagbobada+git@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+text_io = "0.1.7"
