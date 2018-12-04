@@ -3,6 +3,10 @@ Solutions to Advent of Code 2018, in whichever languages I feel like doing (prob
 
 [Reference](https://adventofcode.com)
 
+
+**Disclaimer** : I discovered that the input is probably going to be always
+the same, but it is too late now to change.
+
 # Usage
 
 ```sh
