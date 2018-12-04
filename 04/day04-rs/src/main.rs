@@ -205,7 +205,7 @@ impl GuardInfo {
                             - sleep_start
                                 .expect("Reached a sleep end event before a sleep start event"),
                     );
-                    let guard_id = entry.guard_id.as_ref().unwrap().clone();
+                    let guard_id = entry.guard_id.unwrap();
                     let guard = duty_guards.entry(guard_id).or_insert(Guard::new(guard_id));
                     guard.add_nap(sleep_start.unwrap(), sleep_duration.unwrap());
                     sleep_start = None;
