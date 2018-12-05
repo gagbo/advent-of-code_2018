@@ -1,0 +1,8 @@
+[package]
+name = "day05-rs"
+version = "0.1.0"
+authors = ["Gerry Agbobada <gagbobada+git@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+itertools = "0.7.11"
