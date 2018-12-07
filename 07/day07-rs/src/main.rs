@@ -1,5 +1,4 @@
 use std::cell::RefCell;
-use std::cmp;
 use std::collections::HashMap;
 use std::env;
 use std::fs::File;
@@ -239,22 +238,18 @@ impl TaskList {
             println!(
                 "{} jobs remaining, {} active workers",
                 self.list.len(),
-                workers.iter().fold(0, |acc, worker| match worker {
-                    None => acc,
-                    Some(_) => acc + 1,
-                })
+                workers.iter().flatten().count()
             );
 
             if minimal_time_step {
                 time_step = 1;
             } else {
-                time_step =
-                    workers
-                        .iter()
-                        .fold(usize::max_value(), |acc, opt_task| match opt_task {
-                            None => acc,
-                            Some(task) => cmp::min(acc, task.borrow().time_to_complete),
-                        });
+                time_step = workers
+                    .iter()
+                    .flatten()
+                    .map(|task| task.borrow().time_to_complete)
+                    .min()
+                    .unwrap();
             }
             println!("Time-step is {}", time_step);
             duration += time_step as isize;
