@@ -293,7 +293,21 @@ pub fn example_part_a_from_aoc() {
 
 #[cfg(test)]
 #[test]
+pub fn answer_part_a_from_aoc() {
+    let input_lines = read_input("../input.txt").unwrap();
+    assert_eq!(part_a(input_lines), "JMQZELVYXTIGPHFNSOADKWBRUC");
+}
+
+#[cfg(test)]
+#[test]
 pub fn example_part_b_from_aoc() {
     let input_lines = read_input("../test_input.txt").unwrap();
     assert_eq!(part_b(input_lines, 2, 0), "15");
+}
+
+#[cfg(test)]
+#[test]
+pub fn answer_part_b_from_aoc() {
+    let input_lines = read_input("../input.txt").unwrap();
+    assert_eq!(part_b(input_lines, 5, 60), "1133");
 }
