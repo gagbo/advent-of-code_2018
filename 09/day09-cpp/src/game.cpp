@@ -1,6 +1,6 @@
 #include "game.h"
 
-Game::Game(size_t players, int last_marble) {
+Game::Game(size_t players, long long unsigned int last_marble) {
     scores = std::vector<long long unsigned int>(players);
     circle = std::list<long long unsigned int>(1);
     circle_cursor = circle.begin();

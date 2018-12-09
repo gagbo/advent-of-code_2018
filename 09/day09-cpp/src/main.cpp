@@ -51,7 +51,7 @@ int test(std::string filename, unsigned long long int expected) {
 
 unsigned long long int run_game(const char * filename) {
     size_t players;
-    int last_marble;
+    long long unsigned int last_marble;
     std::ifstream input_stream(filename);
     std::string _dummy;
     input_stream >> players >> _dummy >> _dummy >> _dummy >> _dummy >> _dummy >> last_marble >> _dummy;

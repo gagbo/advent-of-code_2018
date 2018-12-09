@@ -7,7 +7,7 @@
 
 class Game {
  public:
-    Game(size_t players, int last_marble);
+    Game(size_t players, long long unsigned int last_marble);
     void print() const;
 
     void play_game();
@@ -22,7 +22,7 @@ class Game {
     std::list<long long unsigned int> circle;
     std::list<long long unsigned int>::iterator circle_cursor;
     long long unsigned int current_turn;
-    int player_cursor;
+    size_t player_cursor;
     long long unsigned int last_turn;
     int manual_mod_count;
 };
