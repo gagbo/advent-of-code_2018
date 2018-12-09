@@ -1,0 +1,9 @@
+[package]
+name = "day09-rs"
+version = "0.1.0"
+authors = ["Gerry Agbobada <gagbobada+git@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+time = "0.1"
+text_io = "0.1.7"
