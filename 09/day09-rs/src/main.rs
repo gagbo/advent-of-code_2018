@@ -203,9 +203,9 @@ pub fn answer_part_a_from_aoc() {
     assert_eq!(part_a(input_lines), "390093");
 }
 
-// #[cfg(test)]
-// #[test]
-// pub fn answer_part_b_from_aoc() {
-//     let input_lines = read_input("../input.txt").unwrap();
-//     assert_eq!(part_b(input_lines), "33891");
-// }
+#[cfg(test)]
+#[test]
+pub fn answer_part_b_from_aoc() {
+    let input_lines = read_input("../input.txt").unwrap();
+    assert_eq!(part_b(input_lines), "3150377341");
+}
