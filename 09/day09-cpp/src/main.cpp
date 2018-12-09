@@ -140,21 +140,6 @@ long long unsigned int Game::winner_score() const {
 }
 
 int pass_tests() {
-    /* std::cout << "Rappel :\n" */
-    /*              "9 ; 25 -> 32\n" */
-    /*              "10 ; 1618 -> 8317\n" */
-    /*              "13 ; 7999 -> 146373\n" */
-    /*              "17 ; 1104 -> 2764\n" */
-    /*              "21 ; 6111 -> 54718\n" */
-    /*              "30 ; 5807 -> 37305\n" */
-    /*              "471 ; 72026 -> 390093\n" */
-    /*              "471 ; 7202600 -> 3150377341\n"; */
-    /* std::cout << "Player count : "; */
-    /* std::cin >> players; */
-    /* std::cin.ignore(); */
-    /* std::cout << "Marble count : "; */
-    /* std::cin >> last_marble; */
-    /* std::cin.ignore(); */
   int failing_tests = 0;
 
   failing_tests += test("../test_input_easy.txt", 32);
