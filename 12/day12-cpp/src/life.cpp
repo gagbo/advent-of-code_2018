@@ -20,9 +20,9 @@ void LifeLine::print() const {
     std::cout << "Turn " << turn << "\n";
     std::cout << "Game spans from " << min_game_index << " to "
               << max_game_index << "\n";
-    for (int i = min_game_index; i <= max_game_index; ++i) {
-        std::cout << ((value(i) == 1) ? "#" : ".");
-    }
+    //for (int i = min_game_index; i <= max_game_index; ++i) {
+    //    std::cout << ((value(i) == 1) ? "#" : ".");
+    //}
     std::cout << "\n";
 }
 short int& LifeLine::value(int game_index) {
