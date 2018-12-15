@@ -10,10 +10,10 @@ typedef std::pair<unsigned int, unsigned int> pos_t;
 
 /**
  * @brief Entity holds all the information about the stuff on a Board
- * 
+ *
  */
 class Entity {
-public:
+ public:
   /**
    * @brief Enumeration of the different types on Entity on the Board
    *
@@ -52,7 +52,7 @@ public:
    */
   inline std::weak_ptr<Entity> get_target() const { return target; }
 
-protected:
+ protected:
   /**
    * @brief Hit points of the Entity
    *
@@ -80,4 +80,4 @@ protected:
   Type type;
 };
 
-#endif // DAY15_ENTITY_HPP__
+#endif  // DAY15_ENTITY_HPP__

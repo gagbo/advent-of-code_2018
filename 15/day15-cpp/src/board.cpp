@@ -1,8 +1,8 @@
 #include "day15/board.hpp"
-#include <sstream>
 #include <fstream>
-#include <string>
 #include <iostream>
+#include <sstream>
+#include <string>
 
 Board::Board(const char *filename) {
   std::ifstream input_stream(filename);
@@ -19,20 +19,20 @@ void Board::add_line_as_coord_y(std::string input_line, unsigned int fixed_y) {
   for (auto c : input_line) {
     pos_t current_pos = std::make_pair(x, fixed_y);
     switch (c) {
-    case '#':
-      std::cout << "Wall ";
-      break;
-    case 'G':
-      std::cout << "Gobl ";
-      break;
-    case 'E':
-      std::cout << "Elf  ";
-      break;
-    case '.':
-      std::cout << "Void ";
-      break;
-    default:
-      break;
+      case '#':
+        std::cout << "Wall ";
+        break;
+      case 'G':
+        std::cout << "Gobl ";
+        break;
+      case 'E':
+        std::cout << "Elf  ";
+        break;
+      case '.':
+        std::cout << "Void ";
+        break;
+      default:
+        break;
     }
     ++x;
   }
