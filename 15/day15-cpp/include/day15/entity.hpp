@@ -47,6 +47,12 @@ class Entity {
    */
   inline const pos_t pos() const { return position; }
   /**
+   * @brief Get the life_points attribute
+   * 
+   * @return unsigned int  hp remaining hit points of the Entity
+   */
+  inline unsigned int hp() const {return life_points; }
+  /**
    * @brief Get the target attribute
    *
    * @return std::weak_ptr<Entity> Pointer to Entity's current target
