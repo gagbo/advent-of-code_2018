@@ -22,6 +22,7 @@ class Entity {
     ELF,
     GOBLIN,
     WALL,
+    VOID,
   };
 
   Entity(char symbol);

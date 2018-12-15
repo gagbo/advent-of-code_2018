@@ -6,6 +6,10 @@
 
 Board::Board(const char *filename) {
   std::ifstream input_stream(filename);
+  if(!input_stream) {
+    std::cerr << "Error opening " << filename << "\n";
+    exit(1);
+  }
   std::string line;
   unsigned int y = 0;
   while (std::getline(input_stream, line)) {

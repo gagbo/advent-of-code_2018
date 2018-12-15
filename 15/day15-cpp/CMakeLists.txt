@@ -46,3 +46,18 @@ if(PACKAGE_TESTS)
   enable_testing()
   add_subdirectory(tests)
 endif()
+
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_0.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_0.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_1.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_1.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_2.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_2.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_3.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_3.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_4.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_4.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/test_input_5.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/test_input_5.txt COPYONLY)
+configure_file(${CMAKE_CURRENT_SOURCE_DIR}/input/input.txt
+    ${CMAKE_CURRENT_BINARY_DIR}/input/input.txt COPYONLY)

@@ -15,8 +15,8 @@ if(NOT catch_POPULATED)
   add_subdirectory(${catch_SOURCE_DIR} ${catch_BINARY_DIR})
 endif()
 
-add_executable(tests test_lib.cpp test_main.cpp)
-target_link_libraries(tests PUBLIC baselib)
+add_executable(tests test_lib.cpp test_main.cpp test_board.cpp test_entity.cpp)
+target_link_libraries(tests PUBLIC baselib board entity)
 target_link_libraries(tests PRIVATE Catch2::Catch2)
 target_compile_features(tests PUBLIC cxx_std_17)
 
