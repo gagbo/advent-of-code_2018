@@ -16,3 +16,7 @@ Entity::Entity(char symbol) {
       break;
   }
 }
+
+Entity::Entity(char symbol, pos_t board_position) : Entity(symbol) {
+    position = board_position;
+}
